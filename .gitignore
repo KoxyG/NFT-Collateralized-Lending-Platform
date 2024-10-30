@@ -9,6 +9,6 @@ out/
 
 # Docs
 docs/
-
+.github/workflows/
 # Dotenv file
 .env
