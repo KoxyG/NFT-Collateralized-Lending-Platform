@@ -47,6 +47,20 @@ library LibDiamond {
         mapping(bytes4 => bool) supportedInterfaces;
         // owner of the contract
         address contractOwner;
+
+         string private _name;
+
+    // Token symbol
+    string private _symbol;
+
+    mapping(uint256 tokenId => address) _owners;
+
+    mapping(address owner => uint256) _balances;
+
+    mapping(uint256 tokenId => address) _tokenApprovals;
+
+    mapping(address owner => mapping(address operator => bool)) _operatorApprovals;
+
     }
 
     function diamondStorage()
