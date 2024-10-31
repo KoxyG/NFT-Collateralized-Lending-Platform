@@ -48,18 +48,18 @@ library LibDiamond {
         // owner of the contract
         address contractOwner;
 
-         string private _name;
+        string  _name;
 
-    // Token symbol
-    string private _symbol;
+        // Token symbol
+        string _symbol;
 
-    mapping(uint256 tokenId => address) _owners;
+        mapping(uint256 tokenId => address) _owners;
 
-    mapping(address owner => uint256) _balances;
+        mapping(address owner => uint256) _balances;
 
-    mapping(uint256 tokenId => address) _tokenApprovals;
+        mapping(uint256 tokenId => address) _tokenApprovals;
 
-    mapping(address owner => mapping(address operator => bool)) _operatorApprovals;
+        mapping(address owner => mapping(address operator => bool)) _operatorApprovals;
 
     }
 

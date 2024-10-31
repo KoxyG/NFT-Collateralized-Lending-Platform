@@ -20,23 +20,6 @@ abstract contract ERC721 is Context, ERC165, IERC721, IERC721Metadata, IERC721Er
 
     // Token name
    
-    /**
-     * @dev Initializes the contract by setting a `name` and a `symbol` to the token collection.
-     */
-    // constructor(string memory name_, string memory symbol_) {
-    //     _name = name_;
-    //     _symbol = symbol_;
-    // }
-
-    /**
-     * @dev See {IERC165-supportsInterface}.
-     */
-    // function supportsInterface(bytes4 interfaceId) public view virtual override(ERC165, IERC165) returns (bool) {
-    //     return
-    //         interfaceId == type(IERC721).interfaceId ||
-    //         interfaceId == type(IERC721Metadata).interfaceId ||
-    //         super.supportsInterface(interfaceId);
-    // }
 
     /**
      * @dev See {IERC721-balanceOf}.
@@ -255,7 +238,7 @@ abstract contract ERC721 is Context, ERC165, IERC721, IERC721Metadata, IERC721Er
 
         if (to != address(0)) {
             unchecked {
-                _balances[to] += 1;
+               l._balances[to] += 1;
             }
         }
 
